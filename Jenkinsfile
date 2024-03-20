@@ -14,7 +14,7 @@ pipeline{
         }
         stage('checkout from SCM'){
             steps{
-                git branch: 'main' credentialsId: 'github' url: 'https://github.com/Devopswithaws58/register-app-cicd.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Devopswithaws58/register-app-cicd.git'
             }
         }
         stage('build application'){
